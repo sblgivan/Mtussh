@@ -1,0 +1,126 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.header .logo a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.header .search-bar input {
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+
+.header .search-bar button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.header .account-actions a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.header .account-actions a:hover {
+    text-decoration: underline;
+}
+
+/* Drawer and product grid */
+.drawer {
+    display: flex;
+}
+
+.category-drawer {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.category-drawer h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.category-drawer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-drawer ul li {
+    margin-bottom: 10px;
+}
+
+.category-drawer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.category-drawer ul li a:hover {
+    text-decoration: underline;
+}
+
+.products {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-name {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product-price {
+    color: #28a745;
+    font-weight: bold;
+}
+
